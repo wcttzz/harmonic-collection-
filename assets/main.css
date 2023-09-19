@@ -9,12 +9,12 @@ body {
 }
 
 .height {
-    line-height: 0.5;
+    line-height: 0.6;
 }
 
 .center {
     text-align: center; 
-    line-height: 0.5;
+    line-height: 0.6;
 }
 .story {
     font-family: fantasy;
