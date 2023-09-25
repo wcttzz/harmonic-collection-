@@ -15,9 +15,91 @@ body {
 .center {
     text-align: center; 
     line-height: 0.6;
+    font-family: cursive;
+
 }
 .story {
-    font-family: fantasy;
+    font-family: cursive;
     color: #c50505; 
+}
+
+.circlecenter {
+    text-align: center; 
+    line-height: 0.6;
+}
+.container{
+    font-family: cursive;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: rgb(192, 0, 0);
+    font-size: 60px;
+    filter: contrast(15);
+}
+.word{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    filter: blur(0px);
+    animation: wordChange 8s ease-in-out infinite; 
+}
+.word:nth-child(1){
+    animation-delay: -8s;
+}
+.word:nth-child(2){
+    animation-delay: -6s;
+}
+.word:nth-child(3){
+    animation-delay: -4s;
+}
+.word:nth-child(4){
+    animation-delay: -2s;
+}
+
+@keyframes wordChange {
+    0%,
+    10%,
+    100%{
+        filter: blur(0px);
+        opacity: 1;
+    }
+    70%,
+    80%{
+        filter: blur(80px);
+        opacity: 0;
+    }
+}
+.button{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+}
+a{
+    margin: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    position: relative;
+}
+a::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: rgb(192, 0, 0);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+a:hover::after{
+    transform: scaleX(1);
 }
 
