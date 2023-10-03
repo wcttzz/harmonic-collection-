@@ -16,11 +16,16 @@ body {
     text-align: center; 
     line-height: 0.6;
     font-family: cursive;
+    color: #c50505;
 
 }
 .story {
     font-family: cursive;
     color: #c50505; 
+}
+.end {
+    font-family: cursive;
+    color: #6ab4ff;
 }
 
 .circlecenter {
