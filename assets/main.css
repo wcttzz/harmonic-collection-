@@ -20,12 +20,12 @@ body {
 
 }
 .story {
-    font-family: cursive;
+    font-family:'Courier New', Courier, monospace;
     color: #c50505; 
 }
 .end {
     font-family: cursive;
-    color: #6ab4ff;
+    color: #dc4a4a;
 }
 
 .circlecenter {
