@@ -4,7 +4,7 @@
 }
 body{
 
-    background: url(/matchseller.png) no-repeat;
+    background: url(matchseller.png) no-repeat;
     height: 100vh;
     display: flex;
     justify-content: center;
