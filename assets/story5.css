@@ -215,7 +215,7 @@ body{
     font-family: 'Courier New', Courier, monospace;
     left: 20px;
     padding: 10px 20px;
-    background-color: #214aff5d;
+    background-color: #21c4ff5d;
     color: white;
     border: none;
     border-radius: 5px;
@@ -224,10 +224,8 @@ body{
     z-index: 5
 }
 
-
-
 .bottom-right-button:hover {
-    background-color: #0056b3;
+    background-color: #008fb393;
 }
 
 

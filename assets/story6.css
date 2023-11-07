@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(189, 251, 167);
+    justify-content: right;
+    margin-right: 300px;
+}
+.list-item{
+    width: 400px;
+    height: 110px;
+    background-color: var(--color);
+    border-radius: 20px;
+    margin: 16px ;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    cursor: move;
+    box-shadow: 1px 1px 4px black;
+    
+
+
+}
+.list-item img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: top;
+    margin-right: 10px;
+}
+.list-item span{
+    color:aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+.list-item.moving{
+    background-color: transparent;
+    border: 2px dashed #ccc;
+    
+}
+.text {
+    position: absolute;
+    left: 370px; 
+    top: 46%; 
+    transform: translateY(-50%); 
+    text-align: left; 
+    z-index: 2;
+    
+}
+
+.text p {
+    font-size: 50px;
+    color: #128153;
+    font-family:cursive;
+    
+}
+
+.sort {
+    position: absolute;
+    left: 370px; 
+    top: 53%; 
+    transform: translateY(-50%); 
+    text-align: left; 
+    z-index: 2;
+    
+}
+
+.sort p {
+    font-size: 20px;
+    color: #000000;
+    font-family:'Courier New', Courier, monospace
+    
+}
+
+.hint {
+    position: absolute;
+    left: 370px; 
+    top: 56%; 
+    transform: translateY(-50%); 
+    text-align: left; 
+    z-index: 2;
+    
+}
+
+.hint p {
+    font-size: 15px;
+    color: #000000;
+    font-family:'Courier New', Courier, monospace
+    
+}
+
+ .button {
+        position: absolute;
+        left: 30px;
+        top: 96%;
+        transform: translateY(-50%);
+        text-align: left;
+        z-index: 2;
+        font-size: 15px;
+        color: #ffffff; 
+        background-color: rgb(75, 188, 96);
+        border-radius: 20px;
+        padding: 5px 10px;
+        font-family:'Courier New', Courier, monospace;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .button:hover {
+        background-color: #4CAF50;
+    }
+    
+
+
+
+
+
+
