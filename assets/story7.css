@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url("../images/rumple.png");
+    background-size: cover;
+    
+}
+#text{
+    color:#fbe568;
+    font-size: 14px;
+    width: 80vw;
+    line-height: 1.5;
+    margin: 45px auto;
+}
+#btn{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #FFD700;
+    background: #01060d;
+    color: #FFD700;
+    font-size: 14px;
+    font-family: 'cursive';
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    left: 100px;
+    bottom: 230px;
+}
+#rumple {
+    position: absolute;
+    bottom: 350px;
+    left: 100px;
+    color: #FFD700;
+    font-size: 50px;
+    font-family: cursive;
+  }
+#grumpy{
+    position: absolute;
+    bottom: 290px;
+    left: 100px;
+    color: aliceblue;
+    font-size: 30;
+    font-family: cursive;
+    width: 400px;
+    
+  }
+  #newButton a{
+    text-decoration: none;
+    width: 230px;
+    height: 30px;
+    border: 1px solid #FFD700;
+    background: #01060d;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8x;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    left: 100px;
+    bottom: 180px;
+    border-radius: 8px;
+    font-size: 14px;
+    
+  }
+  
+  
+
+
+.floating {
+    display: inline-block;
+    opacity: 1;
+    position: relative;
+    animation-name: floatAway;
+    animation-duration: var(--random-duration, 5s);
+    animation-delay: var(--random-delay, 0s);
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes floatAway {
+    to {
+        opacity: 0;
+        transform: translate(var(--random-x, 0px), var(--random-y, 0px));
+    }
+}
