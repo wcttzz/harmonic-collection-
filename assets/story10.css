@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --margin-top: 0;
+    --margin-left: 0;
+    --animation-duration: 0s;
+    --animation-delay: 0s;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+    perspective: 1300px;
+}
+div{
+    transform-style: preserve-3d;
+}
+.word-box,
+.word-box .word{
+    position: absolute;
+    animation: rotY 0s linear infinite;
+    animation-duration: var(--animation-duration);
+    animation-delay: var(--animation-delay);
+}
+.word-box{
+    margin-top: var(--margin-top);
+}
+.word-box .word{
+    margin-left: var(--margin-left);
+}
+#link{
+    text-decoration: none;
+    width: 80px;
+    height: 20px;
+    background: #b0d1ff1f;
+    color: aliceblue;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+    display: block;
+    margin: 10px;
+    position: absolute;
+    left: 10px;
+    bottom: 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+@keyframes rotY {
+    to{
+        transform: rotateY(1turn)
+    }
+    }
+
+

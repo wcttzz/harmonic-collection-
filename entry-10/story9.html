@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>story9</title>
+    <link href="../assets/story9.css" rel="stylesheet">
+</head>
+<body>
+  <div class="star"></div>
+  <ul class="tree" id="tree"></ul>
+  <script>
+    function createTree(){
+      for(let i=0;i<128;i++){
+          let li=document.createElement('li');
+          li.style.cssText='--h:calc(60vh / 128 * '+i+'); --d:calc(-28s / 128 * '+i+');';
+          document.getElementById('tree').appendChild(li);
+      }
+    }
+    window.addEventListener('load',()=>{
+      createTree();
+
+    })
+  </script>
+    <a href="/index.html" id="link">Let's go back!</a>
+
+</body>
