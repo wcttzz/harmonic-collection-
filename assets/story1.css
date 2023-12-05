@@ -8,8 +8,9 @@ nav{
     width: 100%;
     height: 60px;
     line-height: 60px;
-    position: fixed;
+    position: absolute;
     text-align: center;
+    z-index: 5;
 }
 nav a{
     color: aliceblue;
@@ -17,18 +18,22 @@ nav a{
     font-size: 30px;
     margin: 0 15px;
     text-decoration: none;
+    width: 100%;
+    z-index: 5;
 }
 nav a:hover{
     text-decoration: underline;
+    z-index: 5;
 }
 .container div{
     border: 3px solid rgb(152, 0, 0);
     height: 100vh;
-    width: 174.2vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 150px;
+  
 }
 .container div:nth-child(1){
     background-color:#440505fa;
@@ -46,8 +51,10 @@ nav a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 150px;
   background-color: #530404fa; 
+  position: relative;
+  width: 100%;
+
 }
 
 
@@ -87,6 +94,7 @@ img:nth-child(3){
 
 .container .item#b {
   border: 3px solid red;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;

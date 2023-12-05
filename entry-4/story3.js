@@ -24,5 +24,4 @@ document.onmousemove=e=>{
     p.y=e.clientY;
     render();
 }
-
 render();
